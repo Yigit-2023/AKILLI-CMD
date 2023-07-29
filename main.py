@@ -1,7 +1,7 @@
 while True:
 
     def hesapm():
-        xy = input("Toplama için + çıkarma için - çarpma için x yazın\n")
+        xy = input("""\nToplama işlemi için "+" çıkarma için "-" çarpma için "x" yazın\n""")
 
         if xy == "+":
             xyz = int(input("Rakam 1:\n"))
