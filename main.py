@@ -1,3 +1,4 @@
+#Yazan Yiğit Çıtak 
 while True:
 
     def hesapm():
