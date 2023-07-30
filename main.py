@@ -31,11 +31,38 @@ while True:
 
     giris = input("\nKomut Girin\n")
 
-    if giris == "hesap":
+    if giris == "hesap makinesi":
         hesapm()
 
     elif giris == "help":
-        print("""Komutlar:\n\nhesap  : Hesap Makinesini açar""")
+        print("""Komtlar: 
+            hesap makinesi :  hesap makinesini açar
+            harf--say :  Girilen metinin kaç harften oluştuğunu söyler
+            harf--büyüt :  Girilen metindeki bütün harfler büyük harfe dönüşür
+            harf--küçült :  Girilen metindeki bütün harfler küçük harfe dönüşür
+
+            metin :  Girilen Metini kayıteder""")
+
+
+
+    elif giris == "metin":
+        yaz = input()
+        dosya = open("metin.txt","a+")
+        dosya.write(yaz)
+        dosya.close()
+        print("İşlem başarılı")
+
+    elif giris == "harf--say":
+        h_say = input("Yaz: \n")
+        print(h_say," Girdisi ",len(h_say)," Harftir")
+
+    elif giris == "harf--büyüt":
+        h_buyu = input("Yaz:\n")
+        print(h_buyu.upper())
+
+    elif giris == "harf--küçült":
+        h_kucul = input("Yaz:\n")
+        print(h_kucul.lower())
 
     else:
         print("""
